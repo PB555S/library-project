@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Library</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+
+  <!-- Header / Top Bar -->
+  <header class="top-bar">
+    <div class="app-title">My Library</div>
+    <div class="user-section">
+      <span class="username">Username</span>
+      <img src="profile.png" alt="User Profile" class="user-logo" />
+    </div>
+  </header>
+
+  <!-- Main Page Area -->
+  <main class="page-body">
+    <!-- Left side: book display -->
+    <section id="book-display" class="left-section">
+      <!-- JS will dynamically add book cards here -->
+    </section>
+
+    <!-- Right side: form area -->
+    <section id="form-area" class="right-section">
+      <button id="add-book-btn">+ Add New Book</button>
+      <!-- JS will dynamically insert the form here when button clicked -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
