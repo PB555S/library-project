@@ -8,7 +8,6 @@
 </head>
 <body>
 
-  <!-- Header / Top Bar -->
   <header class="top-bar">
     <div class="app-title">My Library</div>
     <div class="user-section">
@@ -17,17 +16,43 @@
     </div>
   </header>
 
-  <!-- Main Page Area -->
   <main class="page-body">
-    <!-- Left side: book display -->
     <section id="book-display" class="left-section">
-      <!-- JS will dynamically add book cards here -->
+
     </section>
 
-    <!-- Right side: form area -->
+ 
     <section id="form-area" class="right-section">
       <button id="add-book-btn">+ Add New Book</button>
-      <!-- JS will dynamically insert the form here when button clicked -->
+      <dialog id="book-dialog">
+  <form id="book-form" method="dialog">
+    <h2>Add a New Book</h2>
+
+    <label>Title</label>
+    <input type="text" id="title" required />
+
+    <label>Author</label>
+    <input type="text" id="author" required />
+
+    <label>Pages</label>
+    <input type="number" id="pages" required min="1" />
+
+    <label class="switch-label">
+      <span>Read?</span>
+      <label class="switch">
+        <input type="checkbox" id="read-status">
+        <span class="slider"></span>
+      </label>
+    </label>
+
+    <div class="form-buttons">
+      <button id="cancel-btn" type="button">Cancel</button>
+      <button id="submit-btn" type="submit">Add Book</button>
+    </div>
+  </form>
+</dialog>
+
+
     </section>
   </main>
 
